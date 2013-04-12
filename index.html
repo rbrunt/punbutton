@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pun?!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script>
+		function punIt(){
+			var audioPlayer = document.getElementById("audioplayer");
+			audioPlayer.play();
+			console.log("PUN?!");
+		};
+
+	</script>
+</head>
+<body>
+	<style>
+		#punbutton{
+			width:200px;
+			max-width:100%;
+			height:250px;
+			max-height:80%;
+			font-size: 25px;
+			font-weight:bold;
+			padding:0;
+			margin: 0 auto;
+		}
+	</style>
+
+	<audio id="audioplayer" preload="auto">
+		<source src="pun.oga" type="audio/ogg">
+		<source src="pun.mp3" type="audio/mpeg">
+		<p id="noaudio">Unfortunately your browser doesn't support HTML5 audio, please use a more modern one like <a href="http://www.getfirefox.com">firefox</a></p>
+	</audio>
+
+	<button id="punbutton" onClick="punIt();">Pun!?</button>
+	
+</body>
+</html>
